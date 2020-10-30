@@ -18,7 +18,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'git.heroku.com/fnder.git']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -126,3 +126,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # Configure Django App for Heroku.
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
