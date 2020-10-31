@@ -16,9 +16,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'fnder.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'fnder.herokuapp.com/']
 
 
 # Application definition
@@ -127,3 +127,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # Configure Django App for Heroku.
 # Configure Django App for Heroku.
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
