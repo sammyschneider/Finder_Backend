@@ -79,10 +79,11 @@ WSGI_APPLICATION = 'django_rest_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'foods_api',
-        'USER': 'sammy',
-        'PASSWORD': '12345',
-        'HOST': 'localhost'
+        'NAME': 'dap0h44uaifiqp',
+        'USER': 'spssubbmcvvwlp',
+        'PASSWORD': '908b69cdf87ee1a008fbd67ae3b6c9d52077752cee611cd605ccc8299b47db60',
+        'HOST': 'ec2-54-158-190-214.compute-1.amazonaws.com',
+        'PORT' : 5432
     }
 }
 
